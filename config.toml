@@ -1,0 +1,36 @@
+baseURL = "https://edsonmichaque.github.io"
+languageCode = "en-us"
+title = "Edson Michaque"
+theme = "etch"
+
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "Personal blog"
+  copyright = "Copyright © 2020 Edson  Michaque"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/"
+    weight = 10
+
+#  [[menu.main]]
+#    identifier = "about"
+#    name = "about"
+#    title = "about"
+#    url = "/about/"
+#    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true
